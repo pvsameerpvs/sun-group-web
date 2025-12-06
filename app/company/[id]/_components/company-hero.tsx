@@ -5,6 +5,7 @@
 import { cn } from "@/lib/utils";
 import { CompanySlider } from "@/components/CompanySlider";
 import { companies } from "@/lib/companies";
+import { useEffect, useState } from "react";
 
 type Company = (typeof companies)[number];
 
@@ -21,6 +22,46 @@ export function CompanyHero({
   brandGrad,
   sliderImages,
 }: CompanyHeroProps) {
+  const fullText = company.name;
+  const typingSpeed = 120; // typing speed
+  const deletingSpeed = 60; // deleting speed
+  const delayBeforeDelete = 2000; // time before deleting
+  const delayBetweenLoops = 7000; // full repeat time
+
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    let timeout: NodeJS.Timeout;
+
+    if (!isDeleting && displayedText.length < fullText.length) {
+      timeout = setTimeout(() => {
+        setDisplayedText(fullText.slice(0, displayedText.length + 1));
+      }, typingSpeed);
+    } else if (isDeleting && displayedText.length > 0) {
+      timeout = setTimeout(() => {
+        setDisplayedText(fullText.slice(0, displayedText.length - 1));
+      }, deletingSpeed);
+    } else {
+      timeout = setTimeout(
+        () => {
+          setIsDeleting(!isDeleting);
+        },
+        isDeleting ? 800 : delayBeforeDelete
+      );
+    }
+
+    // Repeat every 7 seconds
+    const loopTimeout = setTimeout(() => {
+      setIsDeleting(true);
+    }, delayBetweenLoops);
+
+    return () => {
+      clearTimeout(timeout);
+      clearTimeout(loopTimeout);
+    };
+  }, [displayedText, isDeleting, fullText]);
+
   return (
     <section className="relative">
       {/* HERO IMAGE */}
@@ -73,7 +114,8 @@ export function CompanyHero({
                   "drop-shadow-[0_2px_3px_rgba(0,0,0,0.6)]"
                 )}
               >
-                {company.name}
+                {displayedText}
+                <span className="animate-pulse">|</span>
               </h1>
 
               {/* DESCRIPTION */}
