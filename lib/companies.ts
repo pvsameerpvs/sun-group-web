@@ -27,320 +27,404 @@ export type Company = {
 
 export const companies: Company[] = [
   {
-    id: "sun-trading",
-    name: "SUN TRADING LLC",
-    tagline: "Since 1997 — A Trusted Global Import & Export Partner",
-    established: "Est. 1997",
-    logo: { src: "/logos/sun-trading.png", alt: "Sun Trading LLC logo" },
+  id: "sun-trading",
+  name: "SUN TRADING LLC",
+  tagline: "Since 1997 — A Trusted Global Import & Export Partner",
+  established: "Est. 1997",
+
+  logo: { src: "/logos/sun-trading.png", alt: "Sun Trading LLC logo" },
+
   theme: {
-  pageBg: "bg-gradient-to-b from-[#f5f1ff] via-[#ffffff] to-[#f6f7fb]",
-  headerBg: "bg-white/85",
+    pageBg: "bg-gradient-to-b from-[#f5f1ff] via-[#ffffff] to-[#f6f7fb]",
+    headerBg: "bg-white/85",
 
-  text: "text-slate-900",
-  mutedText: "text-slate-600",
-  subtleText: "text-slate-500",
+    text: "text-slate-900",
+    mutedText: "text-slate-600",
+    subtleText: "text-slate-500",
 
-  accentText: "text-[#6d28d9]",
-  accentBorder: "border-[#8b5cf6]/45",
-  button: "bg-[#7c3aed] text-white hover:bg-[#8b5cf6]",
-  card: "bg-white border-slate-200",
+    accentText: "text-[#6d28d9]",
+    accentBorder: "border-[#8b5cf6]/45",
+    button: "bg-[#7c3aed] text-white hover:bg-[#8b5cf6]",
+    card: "bg-white border-slate-200",
 
-  brandGrad: "bg-gradient-to-r from-[#8b5cf6] via-[#6d28d9] to-[#a78bfa]",
-  brandGradSoft: "bg-gradient-to-r from-[#ece6ff] via-[#ddd6fe] to-[#fff]",
-},
-    nav: [
-      { label: "About", href: "#about", description: "Who we are" },
-      { label: "Divisions", href: "#divisions", description: "What we trade" },
-      { label: "Import/Export", href: "#expertise", description: "Capabilities" },
-      { label: "Quality", href: "#quality", description: "Assurance process" },
-      { label: "Markets", href: "#markets", description: "Where we serve" },
-      { label: "Sustainability", href: "#sustainability", description: "Responsible trade" },
-    ],
-    sections: [
-      {
-        id: "about",
-        title: "About Us",
-        body: [
-          "Founded in 1997, Sun Trading LLC is one of the UAE’s most established import–export and wholesale trading companies.",
-          "Operating from the United Arab Emirates for over 28 years, we have built strong regional and international market presence through reliable supply, competitive pricing, and consistent service.",
-          "We specialize in wholesale trading of ready-made garments, shoes & footwear, gifts & novelty items, brass items (new), and general trading products.",
-        ],
-      },
-      {
-        id: "divisions",
-        title: "Our Product Divisions",
-        body: [
-          "Ready-Made Garments: casual wear, formal wear, kids’ fashion, seasonal collections, and trend-based apparel sourced from quality-approved factories worldwide.",
-          "Shoes Trading: men’s, women’s & kids’ shoes, sports, casual, formal, and seasonal footwear selected for comfort, durability, and market demand.",
-          "Gifts Trading: decorative gifts, corporate souvenirs, seasonal gift sets, personalized gift items, and trendy lifestyle gifts.",
-          "Novelties Trading: fashion accessories, innovative gadgets, kids’ novelty products, and trend-based lifestyle items designed for fast-moving retail & wholesale markets.",
-          "Brass Items Trading (New): brass home décor, religious & cultural products, traditional utensils, decorative pieces, household accessories, and custom-made brass items.",
-        ],
-      },
-      {
-        id: "expertise",
-        title: "Import & Export Expertise",
-        body: [
-          "End-to-end import/export solutions covering global sourcing, supplier coordination, international logistics, customs clearance, documentation & compliance, container load handling, and wholesale/bulk shipments.",
-          "A professional team focused on smooth, efficient, and timely operations.",
-        ],
-      },
-      {
-        id: "quality",
-        title: "Quality Assurance",
-        body: [
-          "Strict quality standards through careful supplier selection, quality control inspections, product testing & verification, and compliance with international standards.",
-          "Our goal is to meet or exceed customer expectations consistently.",
-        ],
-      },
-      {
-        id: "markets",
-        title: "Market Presence",
-        body: [
-          "Serving customers across UAE, GCC countries, India, Africa, Asia, and selected European markets.",
-          "Supplying retailers, wholesalers, distributors, supermarkets, boutiques, and exporters.",
-        ],
-      },
-      {
-        id: "sustainability",
-        title: "Commitment to Sustainability",
-        body: [
-          "Supporting eco-friendly products, working with ethical manufacturers, reducing waste through efficient packaging, and optimizing shipping & logistics.",
-        ],
-      },
-    ],
-    footerNote:
-      "With over 28 years of excellence, Sun Trading LLC continues to lead in the import–export sector through diverse products, strong sourcing, and customer-first values.",
+    brandGrad: "bg-gradient-to-r from-[#8b5cf6] via-[#6d28d9] to-[#a78bfa]",
+    brandGradSoft: "bg-gradient-to-r from-[#ece6ff] via-[#ddd6fe] to-[#fff]"
   },
+
+  nav: [
+    { label: "About", href: "#about", description: "Who we are" },
+    { label: "Divisions", href: "#divisions", description: "What we trade" },
+    { label: "Import/Export", href: "#expertise", description: "Capabilities" },
+    { label: "Quality", href: "#quality", description: "Assurance process" },
+    { label: "Markets", href: "#markets", description: "Where we serve" },
+    { label: "Sustainability", href: "#sustainability", description: "Responsible trade" }
+  ],
+
+  sections: [
+    {
+      id: "about",
+      title: "About Us",
+      body: [
+        "Founded in 1997, Sun Trading LLC is one of the UAE’s most established and reputable import–export and wholesale trading companies.",
+        "With over 28 years of operational excellence, we have built a strong regional and international presence by delivering reliable products, competitive pricing, and unmatched service.",
+        "We specialize in the wholesale trading of ready-made garments, shoes & footwear, gifts, novelty items, brass items (new division), and general trading products.",
+        "Our long-standing relationships with global manufacturers and suppliers enable us to source high-quality products that meet international standards.",
+        "Sun Trading LLC continues to expand its footprint across the UAE, GCC, India, Africa, Asia, and selected European markets."
+      ]
+    },
+
+    {
+      id: "divisions",
+      title: "Our Product Divisions",
+      body: [
+        // READY-MADE GARMENTS
+        "Ready-Made Garments: We offer a vast selection of men’s, women’s, and kids’ clothing including casual wear, formal wear, seasonal collections, kids’ fashion, and trend-based apparel sourced from certified factories worldwide.",
+        "Our garment range focuses on comfort, durability, and modern designs suited for diverse markets.",
+
+        // SHOES TRADING
+        "Shoes Trading: Our footwear division includes men's, women's, and kids’ shoes, sports shoes, casual footwear, formal footwear, fashion shoes, and seasonal collections selected for durability, comfort, and market demand.",
+        "We supply bulk footwear orders for retailers, wholesalers, and distributors across multiple regions.",
+
+        // GIFTS TRADING
+        "Gifts Trading: We supply decorative gifts, corporate souvenirs, seasonal gift sets, personalized items, and lifestyle gifts ideal for corporate events, retail stores, and wholesale distribution.",
+        "Our gift items focus on aesthetic appeal, creativity, and premium presentation.",
+
+        // NOVELTIES TRADING
+        "Novelties Trading: Our novelty division distributes fashion accessories, innovative gadgets, kids’ novelty products, and trend-based lifestyle items that are fast-moving and ideal for retail & wholesale markets.",
+        "We ensure a supply of new, trending, and high-demand novelty items to keep businesses competitive.",
+
+        // BRASS ITEMS TRADING
+        "Brass Items Trading (New Division): Sun Trading LLC now offers high-quality brass products including home décor items, religious and cultural products, traditional utensils, decorative pieces, household accessories, and custom-made brass items.",
+        "Our brass collection is sourced from trusted international manufacturers known for craftsmanship, durability, and premium finishing.",
+        "These brass items are in strong demand across UAE, India, Africa, and GCC markets."
+      ]
+    },
+
+    {
+      id: "expertise",
+      title: "Import & Export Expertise",
+      body: [
+        "With nearly three decades of trading expertise, we offer complete end-to-end import/export services covering global sourcing, supplier coordination, international logistics, customs clearance, documentation, and international compliance.",
+        "We manage container loading, consolidated shipments, bulk orders, and cross-border supply operations across multiple continents.",
+        "Our experienced logistics team ensures smooth, fast, and efficient delivery tailored to client requirements.",
+        "We maintain strong relationships with global carriers, shipping partners, and international suppliers to ensure reliability and consistency."
+      ]
+    },
+
+    {
+      id: "quality",
+      title: "Quality Assurance",
+      body: [
+        "Quality is central to every division at Sun Trading LLC. We adhere to strict inspection and verification standards to ensure every product meets or exceeds customer expectations.",
+        "Our process includes careful supplier evaluation, on-site inspections, product testing, packaging verification, and compliance with global standards.",
+        "We partner only with ethical and certified manufacturers to maintain quality and reliability at every stage of sourcing and distribution."
+      ]
+    },
+
+    {
+      id: "markets",
+      title: "Market Presence",
+      body: [
+        "We serve customers across the UAE, GCC, India, Africa, Asia, and selected European markets.",
+        "Our clients include retailers, wholesalers, supermarkets, distributors, fashion boutiques, corporate buyers, and export houses.",
+        "Sun Trading LLC has established a stable and trusted distribution network that supports large-volume orders, seasonal demand, and long-term procurement partnerships."
+      ]
+    },
+
+    {
+      id: "sustainability",
+      title: "Commitment to Sustainability",
+      body: [
+        "We support eco-friendly products, environmentally responsible manufacturing, and ethical sourcing.",
+        "Our packaging process emphasizes waste reduction, optimized shipment loads, and sustainability-focused materials.",
+        "Sun Trading LLC works with manufacturers who follow fair labor practices, ethical production, and global safety standards.",
+        "We continuously adopt sustainable business practices to reduce environmental impact while supporting responsible global trade."
+      ]
+    }
+  ],
+
+  footerNote:
+    "With over 28 years of excellence, Sun Trading LLC continues to lead the import–export sector through diversified product ranges, strong sourcing networks, and customer-first values. Whether you need garments, footwear, gifts, novelties, or brass items, we ensure premium quality and dependable service."
+}
+,
+  {
+  id: "sun-prosperous",
+  name: "SUN PROSPEROUS GOODS WHOLESALERS CO. L.L.C",
+  tagline:
+    "FMCG • Garments • Building Materials • Perfumes • Distalle Oil • IT Products • Electronics • Auto Parts • General Trading",
+  established: "Est. 2021",
+  logo: { src: "/logos/sun-prosperous.jpg", alt: "Sun Prosperous logo" },
+
+  theme: {
+    pageBg: "bg-gradient-to-b from-[#fff3eb] via-[#ffffff] to-[#f6f7fb]",
+    headerBg: "bg-white/85",
+
+    text: "text-slate-900",
+    mutedText: "text-slate-600",
+    subtleText: "text-slate-500",
+
+    accentText: "text-[#ff6a00]",
+    accentBorder: "border-[#ff8a2b]/55",
+    button: "bg-[#ff8a2b] text-white hover:bg-[#ff9c4d]",
+    card: "bg-white border-slate-200",
+
+    brandGrad: "bg-gradient-to-r from-[#ff8a2b] via-[#ff6a00] to-[#ffb26b]",
+    brandGradSoft: "bg-gradient-to-r from-[#ffe4d2] via-[#ffd1b0] to-[#fff]"
+  },
+
+  nav: [
+    { label: "About", href: "#about" },
+    { label: "FMCG", href: "#fmcg" },
+    { label: "Apparel", href: "#apparel" },
+    { label: "Building Materials", href: "#building" },
+    { label: "Perfumes", href: "#perfumes" },
+    { label: "Oils", href: "#oils" },
+    { label: "IT", href: "#it" },
+    { label: "Electronics", href: "#electronics" },
+    { label: "Auto Parts", href: "#autoparts" },
+    { label: "Advantages", href: "#advantages" }
+  ],
+
+  sections: [
+    {
+      id: "about",
+      title: "About Us",
+      body: [
+        "Sun Prosperous Goods Wholesalers Co. L.L.C, established in 2021 in Dubai, United Arab Emirates, is a diversified general trading and wholesale company engaged in multi-category import and export operations.",
+        "We specialize in wholesale distribution of FMCG products, ready-made garments, textiles, building materials, perfumes, Distalle Oil products, IT products, electronics, and auto parts.",
+        "With a strong global supplier network, competitive pricing, and efficient logistics, we serve retailers, wholesalers, distributors, contractors, industries, and commercial buyers across UAE, GCC, Asia, Africa, and Europe.",
+        "Our foundation is built on quality, reliability, and long-term partnerships, making us a trusted name in the wholesale and trading sector."
+      ]
+    },
+
+    {
+      id: "fmcg",
+      title: "Fast-Moving Consumer Goods (FMCG)",
+      body: [
+        "We supply a wide range of high-demand FMCG products including household essentials, beverages, snacks, cleaning and hygiene products, personal care items, and packaged foods.",
+        "Our FMCG division ensures consistent supply, competitive wholesale pricing, and reliable delivery for supermarkets, retailers, and distributors.",
+        "We focus on stocking fast-moving products that maintain steady market demand across diverse consumer groups."
+      ]
+    },
+
+    {
+      id: "apparel",
+      title: "Ready-Made Garments & Textiles",
+      body: [
+        "Our garments and textiles division includes men's, women's, and kids’ clothing across casual, formal, and seasonal wear categories.",
+        "We supply workwear, uniforms, and fashion textiles, including accessories and fabric-based products.",
+        "Our apparel products are sourced from quality-driven factories, offering trendy designs, durable fabrics, and competitive pricing to meet retail and wholesale market needs."
+      ]
+    },
+
+    {
+      id: "building",
+      title: "Building Materials Trading",
+      body: [
+        "We supply robust and certified building materials for residential, commercial, and industrial projects.",
+        "Our product range includes cement, steel, tiles, ceramics, electrical components, construction hardware, paints, and other essential building materials.",
+        "We ensure durable, high-quality supplies backed by reliable logistics and fast delivery timelines."
+      ]
+    },
+
+    {
+      id: "perfumes",
+      title: "Perfumes & Fragrance Trading",
+      body: [
+        "We supply premium-quality fragrances including designer-inspired perfumes, oud and oriental perfumes, bulk perfumes, and gift sets.",
+        "Our fragrances are sourced from reliable global suppliers and are popular across both wholesale and retail markets.",
+        "We focus on authenticity, elegant packaging, and strong demand-driven product selection."
+      ]
+    },
+
+    {
+      id: "oils",
+      title: "Distalle Oil Products (Lubricants & Oils)",
+      body: [
+        "We distribute automotive and industrial lubricant solutions including engine oils, hydraulic oils, gear oils, brake fluids, coolants, and high-performance industrial lubricants.",
+        "Our products serve workshops, transport fleets, construction companies, heavy machinery operators, and manufacturing industries.",
+        "All lubricants are sourced from trusted producers ensuring durability and efficiency for diverse applications."
+      ]
+    },
+
+    {
+      id: "it",
+      title: "IT Products Trading",
+      body: [
+        "We supply wholesale IT hardware and software including laptops, desktops, servers, networking equipment, monitors, POS systems, and storage solutions.",
+        "We provide corporate licensing for Microsoft products, antivirus solutions, and software packages.",
+        "Our IT products are trusted by retailers, corporate offices, system integrators, and technology distributors across the region."
+      ]
+    },
+
+    {
+      id: "electronics",
+      title: "Electronics Trading",
+      body: [
+        "We distribute consumer and commercial electronics including mobile phones, smart gadgets, speakers, CCTV/security systems, LED TVs, display panels, and small home appliances.",
+        "Our electronics category focuses on high-demand products sourced from global manufacturers.",
+        "We support wholesale and export markets with bulk orders, fast deliveries, and competitive pricing."
+      ]
+    },
+
+    {
+      id: "autoparts",
+      title: "Auto Parts Trading (New Division)",
+      body: [
+        "Our new automotive division supplies a wide range of auto spare parts for passenger and commercial vehicles.",
+        "The product line includes engine parts, brake pads, filters, suspension and steering components, belts, bearings, bolts, lubricants, electrical parts, coolants, and body accessories.",
+        "Industries served include auto workshops, spare parts traders, fleet operators, transport companies, and heavy machinery operators.",
+        "All auto parts are sourced from certified and reliable manufacturers ensuring performance, durability, and compatibility."
+      ]
+    },
+
+    {
+      id: "advantages",
+      title: "Strategic Advantages",
+      body: [
+        "Dubai as a trading hub provides seamless access to GCC, Asian, African, and European markets with efficient logistics and global shipping routes.",
+        "Our efficient supply chain ensures fast deliveries, high-volume stock capacity, and container shipments for bulk buyers.",
+        "We maintain an international sourcing network with direct procurement from factories, certified manufacturers, and global suppliers.",
+        "Our integrated operations support professional documentation, compliance, warehousing, and secure export/import handling."
+      ]
+    }
+  ],
+
+  footerNote:
+    "Sun Prosperous Goods Wholesalers Co. L.L.C continues to expand its multi-category trading capabilities with a focus on quality, reliability, and long-term partnerships across global markets."
+}
+,
 
   {
-    id: "sun-prosperous",
-    name: "SUN PROSPEROUS GOODS WHOLESALERS CO. L.L.C",
-    tagline:
-      "FMCG • Garments • Building Materials • Perfumes • Distalle Oil • IT Products • Electronics • Auto Parts • General Trading",
-    established: "Est. 2021",
-    logo: { src: "/logos/sun-prosperous.jpg", alt: "Sun Prosperous logo" },
-theme: {
-  pageBg: "bg-gradient-to-b from-[#fff3eb] via-[#ffffff] to-[#f6f7fb]",
-  headerBg: "bg-white/85",
+  id: "venus-overseas",
+  name: "VENUS OVERSEAS INTERNATIONAL TRADING L.L.C",
+  tagline: "Global Trading • Readymade Garments • Shoes • Perfumes • Gifts",
+  established: "Est. 2024",
+  logo: { src: "/logos/venus-overseas.png", alt: "Venus Overseas logo" },
 
-  text: "text-slate-900",
-  mutedText: "text-slate-600",
-  subtleText: "text-slate-500",
+  theme: {
+    pageBg: "bg-gradient-to-b from-[#f5f1ff] via-[#ffffff] to-[#f6f7fb]",
+    headerBg: "bg-white/85",
 
-  accentText: "text-[#ff6a00]",
-  accentBorder: "border-[#ff8a2b]/55",
-  button: "bg-[#ff8a2b] text-white hover:bg-[#ff9c4d]",
-  card: "bg-white border-slate-200",
+    text: "text-slate-900",
+    mutedText: "text-slate-600",
+    subtleText: "text-slate-500",
 
-  brandGrad: "bg-gradient-to-r from-[#ff8a2b] via-[#ff6a00] to-[#ffb26b]",
-  brandGradSoft: "bg-gradient-to-r from-[#ffe4d2] via-[#ffd1b0] to-[#fff]",
-},
+    accentText: "text-[#6d28d9]",
+    accentBorder: "border-[#8b5cf6]/45",
+    button: "bg-[#7c3aed] text-white hover:bg-[#8b5cf6]",
+    card: "bg-white border-slate-200",
 
-    nav: [
-      { label: "About", href: "#about" },
-      { label: "FMCG", href: "#fmcg" },
-      { label: "Apparel", href: "#apparel" },
-      { label: "Building Materials", href: "#building" },
-      { label: "Perfumes", href: "#perfumes" },
-      { label: "Oils", href: "#oils" },
-      { label: "IT", href: "#it" },
-      { label: "Electronics", href: "#electronics" },
-      { label: "Auto Parts", href: "#autoparts" },
-      { label: "Advantages", href: "#advantages" },
-    ],
-    sections: [
-      {
-        id: "about",
-        title: "About Us",
-        body: [
-          "Established in 2021 in Dubai, United Arab Emirates, Sun Prosperous Goods Wholesalers Co. L.L.C is a diversified general trading and wholesale company engaged in multi-category import and export operations.",
-          "We serve retailers, wholesalers, distributors, contractors, industries, and commercial buyers across the UAE, GCC, Asia, Africa, and Europe.",
-          "Our commitment is built on quality, reliability, and long-term business partnerships.",
-        ],
-      },
-      {
-        id: "fmcg",
-        title: "Fast-Moving Consumer Goods (FMCG)",
-        body: [
-          "Household essentials, beverages & snacks, cleaning & hygiene items, personal care products, and packaged foods.",
-          "Consistent supply and competitive wholesale pricing.",
-        ],
-      },
-      {
-        id: "apparel",
-        title: "Ready-Made Garments & Textiles",
-        body: [
-          "Men’s, women’s & kids’ clothing, casual/formal/seasonal wear, workwear & uniforms, fashion textiles & accessories.",
-          "Trendy designs, durable fabrics, and strong global sourcing.",
-        ],
-      },
-      {
-        id: "building",
-        title: "Building Materials Trading",
-        body: [
-          "Cement & steel, tiles & ceramics, electrical components, construction hardware, paints & accessories.",
-          "Certified quality, durability, and reliable supply for residential, commercial & industrial sectors.",
-        ],
-      },
-      {
-        id: "perfumes",
-        title: "Perfumes & Fragrance Trading",
-        body: [
-          "Designer-inspired perfumes, oud & oriental perfumes, gift sets, and bulk fragrances.",
-          "Focused on authenticity and strong market demand.",
-        ],
-      },
-      {
-        id: "oils",
-        title: "Distalle Oil Products (Lubricants & Oils)",
-        body: [
-          "Engine oils, hydraulic oils, gear oils, industrial lubricants, brake fluids & coolants.",
-          "Suitable for workshops, fleets, construction firms, and factories.",
-        ],
-      },
-      {
-        id: "it",
-        title: "IT Products Trading",
-        body: [
-          "Laptops & desktops, networking equipment, monitors & storage, POS machines & peripherals, Microsoft & antivirus licensing.",
-          "Trusted by retailers, corporates, and IT integrators.",
-        ],
-      },
-      {
-        id: "electronics",
-        title: "Electronics Trading",
-        body: [
-          "Mobile phones & accessories, speakers & smart gadgets, CCTV/security systems, LED TVs & display panels, and small home appliances.",
-          "High-demand consumer & commercial electronics sourced from global suppliers.",
-        ],
-      },
-      {
-        id: "autoparts",
-        title: "Auto Parts Trading (New Division)",
-        body: [
-          "Engine components, brake system parts, filters, suspension & steering, belts/bearings/bolts, lubricants & coolants, electrical components, and body parts & accessories.",
-          "Serving workshops, spare parts traders, fleet operators, transport companies, and heavy machinery operators.",
-        ],
-      },
-      {
-        id: "advantages",
-        title: "Strategic Advantages",
-        body: [
-          "Dubai as a trading hub with access to GCC, Asia, Africa & European routes.",
-          "Efficient supply chain: fast deliveries, large stock capacity & container shipments.",
-          "International sourcing network: direct purchase from factories & certified manufacturers.",
-        ],
-      },
-    ],
-    footerNote:
-      "Sun Prosperous Goods Wholesalers Co. L.L.C continues to expand its trading capabilities to meet evolving global market demands.",
+    brandGrad: "bg-gradient-to-r from-[#8b5cf6] via-[#6d28d9] to-[#a78bfa]",
+    brandGradSoft: "bg-gradient-to-r from-[#ece6ff] via-[#ddd6fe] to-[#fff]"
   },
 
-  {
-    id: "venus-overseas",
-    name: "VENUS OVERSEAS INTERNATIONAL TRADING L.L.C",
-    tagline: "Global Trading • Readymade Garments • Shoes • Perfumes • Gifts",
-    established: "Est. 2024",
-    logo: { src: "/logos/venus-overseas.png", alt: "Venus Overseas logo" },
-theme: {
-  pageBg: "bg-gradient-to-b from-[#f5f1ff] via-[#ffffff] to-[#f6f7fb]",
-  headerBg: "bg-white/85",
+  nav: [
+    { label: "About", href: "#about" },
+    { label: "Garments", href: "#garments" },
+    { label: "Shoes", href: "#shoes" },
+    { label: "Perfumes", href: "#perfumes" },
+    { label: "Gifts", href: "#gifts" },
+    { label: "Markets", href: "#markets" },
+    { label: "Why Us", href: "#why" },
+    { label: "Location", href: "#location" }
+  ],
 
-  text: "text-slate-900",
-  mutedText: "text-slate-600",
-  subtleText: "text-slate-500",
+  sections: [
+    {
+      id: "about",
+      title: "About Us",
+      body: [
+        "Venus Overseas International Trading L.L.C, established in 2024, is a rapidly growing import and export company headquartered at Office 102, Al Budoor Building, Baniyas Square, Deira, Dubai – U.A.E.",
+        "We specialize in trading a diverse range of high-quality products including readymade garments, shoes, perfumes, and gifts, serving clients across multiple international markets.",
+        "Our goal is to build a trusted reputation as a reliable trading partner for businesses seeking premium-quality products at competitive wholesale pricing.",
+        "Our primary focus markets include India, China, and Hong Kong, where we maintain strong sourcing and distribution networks supported by deep market knowledge and supplier relationships."
+      ]
+    },
 
-  accentText: "text-[#6d28d9]",
-  accentBorder: "border-[#8b5cf6]/45",
-  button: "bg-[#7c3aed] text-white hover:bg-[#8b5cf6]",
-  card: "bg-white border-slate-200",
+    {
+      id: "garments",
+      title: "Readymade Garments",
+      body: [
+        "We offer a comprehensive collection of fashionable, comfortable, and high-quality clothing for men, women, and children.",
+        "Our garment range includes casual wear, formal wear, seasonal collections, kidswear, and trend-based fashion items tailored to meet diverse customer preferences.",
+        "We prioritize premium fabric quality, modern design, and competitive pricing suitable for both retail and wholesale buyers.",
+        "With strong sourcing channels across Asia, we ensure continuous product availability and updated fashion lines."
+      ]
+    },
 
-  brandGrad: "bg-gradient-to-r from-[#8b5cf6] via-[#6d28d9] to-[#a78bfa]",
-  brandGradSoft: "bg-gradient-to-r from-[#ece6ff] via-[#ddd6fe] to-[#fff]",
-},
-    nav: [
-      { label: "About", href: "#about" },
-      { label: "Garments", href: "#garments" },
-      { label: "Shoes", href: "#shoes" },
-      { label: "Perfumes", href: "#perfumes" },
-      { label: "Gifts", href: "#gifts" },
-      { label: "Markets", href: "#markets" },
-      { label: "Why Us", href: "#why" },
-      { label: "Location", href: "#location" },
-    ],
-    sections: [
-      {
-        id: "about",
-        title: "About Us",
-        body: [
-          "Venus Overseas International Trading L.L.C, established in 2024, is a rapidly growing import and export company headquartered in Deira, Dubai, UAE.",
-          "We trade a diverse range of high-quality products including readymade garments, shoes, perfumes, and gifts—catering to clients across international markets.",
-          "We aim to become a reliable trading partner for businesses seeking premium products at competitive prices.",
-        ],
-      },
-      {
-        id: "garments",
-        title: "Readymade Garments",
-        body: [
-          "Fashionable, comfortable, and high-quality clothing for men, women, and children.",
-          "Casual wear, formal wear, seasonal clothing, kidswear, and trendy fashion collections.",
-        ],
-      },
-      {
-        id: "shoes",
-        title: "Shoes Trading",
-        body: [
-          "Men’s, women’s & kids’ shoes, sports shoes, casual and formal footwear, and fashion collections.",
-          "Quality, comfort, and style remain at the core of our selection.",
-        ],
-      },
-      {
-        id: "perfumes",
-        title: "Perfume Trading",
-        body: [
-          "Premium-quality perfumes sourced from reputable manufacturers.",
-          "Designer-inspired fragrances, oriental & oud perfumes, gift sets & premium EDPs, and seasonal collections.",
-        ],
-      },
-      {
-        id: "gifts",
-        title: "Gifts Trading",
-        body: [
-          "Corporate gifts, decorative items, seasonal gifts, personal gifting products, and customized gift sets.",
-          "Every gift is selected for quality, creativity, and appeal.",
-        ],
-      },
-      {
-        id: "markets",
-        title: "Market Focus",
-        body: [
-          "India: a strong established market for garments, shoes, perfumes, and gifts.",
-          "China: key sourcing and trading hub enabling competitive pricing and diverse availability.",
-          "Hong Kong: a strategic gateway connecting global buyers and suppliers.",
-        ],
-      },
-      {
-        id: "why",
-        title: "Why Choose Us",
-        body: [
-          "Wide portfolio across multiple consumer categories.",
-          "Competitive pricing and reliable sourcing.",
-          "Strong global supplier and buyer network.",
-          "Fast and efficient logistics with transparent business practices.",
-        ],
-      },
-      {
-        id: "location",
-        title: "Head Office",
-        body: [
-          "Office 102, Al Budoor Building, Baniyas Square, Deira, Dubai – U.A.E.",
-        ],
-      },
-    ],
-    footerNote:
-      "Venus Overseas International Trading L.L.C is built on strong relationships, efficient logistics, and a commitment to long-term partnerships.",
-  },
+    {
+      id: "shoes",
+      title: "Shoes Trading",
+      body: [
+        "Our footwear division supplies a wide range of stylish, durable, and market-demand shoes for adults and children.",
+        "We deal in men's, women's & kids’ shoes, sports shoes, casual and formal footwear, and fashion-focused seasonal collections.",
+        "Quality, comfort, and contemporary design trends are at the core of our footwear selection.",
+        "We source from trusted manufacturers ensuring consistent product quality and competitive wholesale rates."
+      ]
+    },
+
+    {
+      id: "perfumes",
+      title: "Perfume Trading",
+      body: [
+        "We supply premium-quality perfumes sourced from reputable global fragrance manufacturers.",
+        "Our perfume collection includes designer-inspired fragrances, oriental & oud perfumes, elegant gift sets, premium EDPs, and seasonal fragrance selections.",
+        "We cater to international retailers, wholesalers, and distributors seeking high-quality fragrances with strong market appeal.",
+        "Each product is selected for longevity, presentation, and its ability to match current fragrance trends."
+      ]
+    },
+
+    {
+      id: "gifts",
+      title: "Gifts Trading",
+      body: [
+        "Our curated gifts range includes corporate gifts, decorative items, seasonal gifts, personalized gifting products, and custom gift sets.",
+        "We focus on high-quality, stylish, and unique items that cater to both individual customers and corporate buyers.",
+        "Each gift item is selected based on creativity, market appeal, and material quality.",
+        "We support bulk orders, seasonal gifting campaigns, corporate requirements, and international shipments."
+      ]
+    },
+
+    {
+      id: "markets",
+      title: "Market Focus",
+      body: [
+        "India: One of our strongest markets, where we supply garments, shoes, perfumes, and gift items through a robust distributor network.",
+        "China: A major sourcing and trading hub that enables competitive pricing, diverse product availability, and rapid production cycles.",
+        "Hong Kong: A strategic gateway ensuring access to international suppliers, global logistics routes, and cross-border trading efficiency.",
+        "We continue to expand our market presence while maintaining strong partnerships and exploring new trading opportunities."
+      ]
+    },
+
+    {
+      id: "why",
+      title: "Why Choose Us",
+      body: [
+        "A wide and diverse product portfolio covering multiple fast-moving consumer categories.",
+        "Competitive pricing backed by reliable global sourcing networks.",
+        "Strong relationships with international suppliers and buyers ensuring steady product flow.",
+        "Strategic operational location in Dubai, providing seamless import/export access to global markets.",
+        "Fast and efficient logistics supported by trusted transport partners.",
+        "Transparent business practices and professional communication.",
+        "Commitment to building long-term partnerships and client satisfaction."
+      ]
+    },
+
+    {
+      id: "location",
+      title: "Head Office",
+      body: [
+        "Office 102, Al Budoor Building, Baniyas Square, Deira, Dubai – U.A.E.",
+        "Located in one of Dubai’s most active commercial trading districts, providing easy access to global suppliers and logistics partners."
+      ]
+    }
+  ],
+
+  footerNote:
+    "Venus Overseas International Trading L.L.C is committed to excellence, strong global partnerships, and delivering high-quality products with professional trading standards."
+}
+
 ];
 
 export function getCompany(id: Company["id"]) {
