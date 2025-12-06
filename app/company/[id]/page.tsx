@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 // ✅ local, slug-scoped components
 import { CompanyHero } from "./_components/company-hero";
 import { CompanySections } from "./_components/company-sections";
+import { CompanyWhatsAppFloat } from "@/components/company-whatsapp-float";
 
 export function generateStaticParams() {
   return companies.map((c) => ({ id: c.id }));
@@ -46,7 +47,7 @@ const sliderImages: Record<string, { src: string; alt: string }[]> = {
       alt: "Building materials & industrial supply",
     },
     {
-      src: "/Ready-MadeGarmentsTextiles.jpg",
+      src: "/ReadyMadeGarmentsTextiles.jpg",
       alt: "IT, electronics & auto parts trading",
     },
   ],
@@ -87,7 +88,7 @@ const sectionImage: Record<
   "sun-prosperous": {
     about: { src: "/AutoPartsGeneralTrading.jpg", alt: "About Sun Prosperous" },
     fmcg: { src: "/FMCG.jpg", alt: "FMCG" },
-    apparel: { src: "/Garments & textiles.jpg", alt: "Garments & textiles" },
+    apparel: { src: "/Garmentstextiles.jpg", alt: "Garments & textiles" },
     building: { src: "/buildingmaterials.jpg", alt: "Building materials" },
     perfumes: { src: "/Perfumesfragrances.jpg", alt: "Perfumes & fragrances" },
     oils: { src: "/DistalleOilProducts.jpg", alt: "Lubricants & oils" },
@@ -153,6 +154,7 @@ export default function CompanyPage({ params }: { params: { id: string } }) {
           <CompanyFooter company={company} />
         </div>
       </main>
+      <CompanyWhatsAppFloat company={company} />
     </SiteShell>
   );
 }
