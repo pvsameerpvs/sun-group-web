@@ -13,23 +13,23 @@ export function generateStaticParams() {
 }
 
 const heroBg: Record<string, string> = {
-  "sun-trading": "/hero1.jpg",
-  "sun-prosperous": "/hero2.jpg",
-  "venus-overseas": "/hero3.jpg",
+  "sun-trading": "/suntradinghero.jpg",
+  "sun-prosperous": "/sun-prosperous.jpg",
+  "venus-overseas": "/venus-overseas.jpg",
 };
 
 const sliderImages: Record<string, { src: string; alt: string }[]> = {
   "sun-trading": [
     {
-      src: "/slides/sun-trading/slide-1.jpg",
+      src: "/Globalsourcing&wholesaletrade.jpg",
       alt: "Global sourcing & wholesale trade",
     },
     {
-      src: "/slides/sun-trading/slide-2.jpg",
+      src: "/Ready-madegarmentfootwearsupply.jpg",
       alt: "Ready-made garments & footwear supply",
     },
     {
-      src: "/slides/sun-trading/slide-3.jpg",
+      src: "/Logisticsexportsdistribution.jpg",
       alt: "Logistics, exports & distribution",
     },
   ],
@@ -59,12 +59,18 @@ const sectionImage: Record<
   Record<string, { src: string; alt: string }>
 > = {
   "sun-trading": {
-    about: { src: "/sections/sun-trading/about.jpg", alt: "About Sun Trading" },
-    divisions: { src: "/hero1.jpg", alt: "Product divisions" },
-    expertise: { src: "/hero1.jpg", alt: "Import & export expertise" },
-    quality: { src: "/hero1.jpg", alt: "Quality assurance" },
-    markets: { src: "/hero1.jpg", alt: "Market presence" },
-    sustainability: { src: "/hero1.jpg", alt: "Sustainability" },
+    about: { src: "/import–export.jpg", alt: "About Sun Trading" },
+    divisions: { src: "/Ready-MadeGarments.jpg", alt: "Product divisions" },
+    expertise: {
+      src: "/ImportExportExpertise.jpg",
+      alt: "Import & export expertise",
+    },
+    quality: { src: "/QualityAssurance.jpg", alt: "Quality assurance" },
+    markets: { src: "/MarketPresence.jpg", alt: "Market presence" },
+    sustainability: {
+      src: "/CommitmenttoSustainability.jpg",
+      alt: "Sustainability",
+    },
   },
   "sun-prosperous": {
     about: { src: "/hero1.jpg", alt: "About Sun Prosperous" },
