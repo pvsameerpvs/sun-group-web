@@ -27,7 +27,8 @@ export function CompanyFooter({ company }: { company: Company }) {
               {company.footerNote}
             </div>
           </div>
-
+        </div>
+        <div className="flex justify-center">
           <BackToAllCompanies />
         </div>
 
