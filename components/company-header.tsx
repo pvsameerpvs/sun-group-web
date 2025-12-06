@@ -42,13 +42,13 @@ export function CompanyHeader({ company }: { company: Company }) {
 
         <div className="mx-auto w-full max-w-7xl px-4 md:px-6 lg:px-8">
           {/* TOP ROW – LOGO + NAME + NAV / CONTROLS */}
-          <div className="flex items-center justify-between gap-3 py-4">
+          <div className="flex items-center justify-between gap-3 py-2">
             <Link
               href={`/company/${company.id}`}
               className="flex items-center gap-3 no-underline"
             >
               {/* bigger logo */}
-              <div className="relative h-16 w-16 md:h-20 md:w-20">
+              <div className="relative h-12 w-12 md:h-16 md:w-16">
                 <Image
                   src={company.logo.src}
                   alt={company.logo.alt}
@@ -115,17 +115,19 @@ export function CompanyHeader({ company }: { company: Company }) {
                 type="button"
                 onClick={() => setMobileOpen((o) => !o)}
                 className={cn(
-                  "inline-flex items-center justify-center rounded-full border px-2.5 py-2",
-                  "border-black/10 bg-white/80 text-slate-900 shadow-sm",
-                  "hover:bg-white",
-                  "sm:hidden"
+                  "inline-flex items-center justify-center px-4 py-3",
+                  "text-slate-900 shadow-md",
+                  "font-semibold",
+                  "hover:bg-white/90",
+                  "sm:hidden",
+                  "rounded-md"
                 )}
                 aria-label="Toggle navigation"
               >
                 {mobileOpen ? (
-                  <X className="h-4 w-4" />
+                  <X className="h-6 w-6 font-bold" /> // bigger icon
                 ) : (
-                  <Menu className="h-4 w-4" />
+                  <Menu className="h-6 w-6 font-bold" /> // bigger icon
                 )}
               </button>
             </div>
@@ -179,7 +181,7 @@ export function CompanyHeader({ company }: { company: Company }) {
             <button
               type="button"
               onClick={closeMobile}
-              className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200"
+              className="inline-flex h-8 w-8 items-center justify-center "
               aria-label="Close navigation"
             >
               <X className="h-4 w-4 text-slate-700" />
