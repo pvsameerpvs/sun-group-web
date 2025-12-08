@@ -47,7 +47,7 @@ export const companies: Company[] = [
     button: "bg-[#7c3aed] text-white hover:bg-[#8b5cf6]",
     card: "bg-white border-slate-200",
 
-    brandGrad: "bg-gradient-to-r from-[#8b5cf6] via-[#6d28d9] to-[#a78bfa]",
+   brandGrad: "bg-gradient-to-r from-[#ddd6fe] via-[#c4b5fd] to-[#e9d5ff]",
     brandGradSoft: "bg-gradient-to-r from-[#ece6ff] via-[#ddd6fe] to-[#fff]"
   },
 
@@ -169,7 +169,7 @@ export const companies: Company[] = [
     button: "bg-[#ff8a2b] text-white hover:bg-[#ff9c4d]",
     card: "bg-white border-slate-200",
 
-    brandGrad: "bg-gradient-to-r from-[#ff8a2b] via-[#ff6a00] to-[#ffb26b]",
+   brandGrad: "bg-gradient-to-r from-[#fed7aa] via-[#fdba74] to-[#ffe4c7]",
     brandGradSoft: "bg-gradient-to-r from-[#ffe4d2] via-[#ffd1b0] to-[#fff]"
   },
 
@@ -316,7 +316,8 @@ export const companies: Company[] = [
     button: "bg-[#7c3aed] text-white hover:bg-[#8b5cf6]",
     card: "bg-white border-slate-200",
 
-    brandGrad: "bg-gradient-to-r from-[#8b5cf6] via-[#6d28d9] to-[#a78bfa]",
+   brandGrad: "bg-gradient-to-r from-[#ddd6fe] via-[#c4b5fd] to-[#e9d5ff]",
+
     brandGradSoft: "bg-gradient-to-r from-[#ece6ff] via-[#ddd6fe] to-[#fff]"
   },
 
