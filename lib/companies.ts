@@ -52,10 +52,11 @@ export const companies: Company[] = [
   },
 
   nav: [
-    { label: "About", href: "#about", description: "Who we are" },
-    { label: "Divisions", href: "#divisions", description: "What we trade" },
-    { label: "Import/Export", href: "#expertise", description: "Capabilities" },
-    { label: "Quality", href: "#quality", description: "Assurance process" },
+     { label: "Home", href: "/company/sun-trading", description: "Home" },
+    { label: "About", href: "/about-sun-trading", description: "Who we are" },
+    { label: "Divisions", href: "/divisions-sun-trading", description: "What we trade" },
+    { label: "Import/Export", href: "/import-export-sun-trading", description: "Capabilities" },
+    { label: "Quality", href: "/quality-sun-trading", description: "Assurance process" },
     { label: "Markets", href: "#markets", description: "Where we serve" },
     { label: "Sustainability", href: "#sustainability", description: "Responsible trade" }
   ],
@@ -173,11 +174,11 @@ export const companies: Company[] = [
   },
 
   nav: [
-    { label: "About", href: "#about" },
-    { label: "FMCG", href: "#fmcg" },
-    { label: "Apparel", href: "#apparel" },
-    { label: "Building Materials", href: "#building" },
-    { label: "Perfumes", href: "#perfumes" },
+    { label: "Home", href: "/company/sun-prosperous" },
+    { label: "About", href: "/about-sun-prosperous" },
+    { label: "FMCG", href: "/fmcg-sun-prosperous" },
+    { label: "Building Materials", href: "/building-materials-sun-prosperous" },
+    { label: "Perfumes", href: "/perfumes-sun-prosperous" },
     { label: "Oils", href: "#oils" },
     { label: "IT", href: "#it" },
     { label: "Electronics", href: "#electronics" },
@@ -320,10 +321,11 @@ export const companies: Company[] = [
   },
 
   nav: [
-    { label: "About", href: "#about" },
-    { label: "Garments", href: "#garments" },
-    { label: "Shoes", href: "#shoes" },
-    { label: "Perfumes", href: "#perfumes" },
+    { label: "Home", href: "/company/venus-overseas" },
+    { label: "About", href: "/about-venus-overseas" },
+    { label: "Garments", href: "/garments-venuse-overseas" },
+    { label: "Shoes", href: "/shoes-venuse-overseas" },
+    { label: "Perfumes", href: "/perfumes-venuse-overseas" },
     { label: "Gifts", href: "#gifts" },
     { label: "Markets", href: "#markets" },
     { label: "Why Us", href: "#why" },

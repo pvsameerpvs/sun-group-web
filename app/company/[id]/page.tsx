@@ -1,13 +1,9 @@
 // app/company/[id]/page.tsx
-
 import { notFound } from "next/navigation";
 import { companies } from "@/lib/companies";
-import { SiteShell } from "@/components/site-shell";
-import { CompanyHeader } from "@/components/company-header";
-import { CompanyFooter } from "@/components/company-footer";
 import { cn } from "@/lib/utils";
 
-// ✅ local, slug-scoped components
+// local components
 import { CompanyHero } from "./_components/company-hero";
 import { CompanySections } from "./_components/company-sections";
 import { CompanyWhatsAppFloat } from "@/components/company-whatsapp-float";
@@ -60,10 +56,7 @@ const sliderImages: Record<string, { src: string; alt: string }[]> = {
       src: "/Garmentsshoeslifestyleproducts.jpg",
       alt: "Garments, shoes & lifestyle products",
     },
-    {
-      src: "/Perfumescuratedgifting.jpg",
-      alt: "Perfumes and curated gifting",
-    },
+    { src: "/Perfumescuratedgifting.jpg", alt: "Perfumes and curated gifting" },
   ],
 };
 
@@ -104,10 +97,7 @@ const sectionImage: Record<
     about: { src: "/AboutVenusOverseas.jpg", alt: "About Venus Overseas" },
     garments: { src: "/Readymadegarments.jpg", alt: "Readymade garments" },
     shoes: { src: "/Shoestrading.jpg", alt: "Shoes trading" },
-    perfumes: {
-      src: "/PerfumeTrading.jpg",
-      alt: "Perfume trading",
-    },
+    perfumes: { src: "/PerfumeTrading.jpg", alt: "Perfume trading" },
     gifts: { src: "/Giftstrading.jpg", alt: "Gifts trading" },
     markets: { src: "/MarketFocus.jpg", alt: "Market focus" },
     why: { src: "/Whychooseus.jpg", alt: "Why choose us" },
@@ -131,30 +121,28 @@ export default function CompanyPage({ params }: { params: { id: string } }) {
     "bg-gradient-to-r from-black/10 via-black/5 to-transparent";
 
   return (
-    <SiteShell className={cn(company.theme.pageBg, "relative overflow-hidden")}>
-      <CompanyHeader company={company} />
+    <main
+      id="top"
+      className={cn(company.theme?.pageBg, "relative overflow-hidden")}
+    >
+      <CompanyHero
+        company={company}
+        hero={hero}
+        brandGrad={brandGrad}
+        sliderImages={sliderImages[company.id]}
+      />
 
-      <main id="top">
-        <CompanyHero
+      <div className="container-shell mt-10 mb-12">
+        <CompanySections
           company={company}
-          hero={hero}
-          brandGrad={brandGrad}
-          sliderImages={sliderImages[company.id]}
+          sectionImages={sImgs}
+          textClass={text}
+          mutedClass={muted}
+          subtleClass={subtle}
         />
+      </div>
 
-        <div className="container-shell mt-10 mb-12">
-          <CompanySections
-            company={company}
-            sectionImages={sImgs}
-            textClass={text}
-            mutedClass={muted}
-            subtleClass={subtle}
-          />
-
-          <CompanyFooter company={company} />
-        </div>
-      </main>
       <CompanyWhatsAppFloat company={company} />
-    </SiteShell>
+    </main>
   );
 }
