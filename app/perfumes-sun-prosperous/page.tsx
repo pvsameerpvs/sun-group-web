@@ -58,7 +58,7 @@ const categories = [
       "Seasonal options",
       "Retail-friendly assortments",
     ],
-    img: { src: "/PerfumeGiftSets.jpg", alt: "Perfume gift sets" },
+    img: { src: "/PerfumeGiftSets1.jpg", alt: "Perfume gift sets" },
   },
 ];
 
@@ -89,7 +89,7 @@ const workflow = [
 ];
 
 const gallery = [
-  { src: "/Perfumesfragrances.jpg", alt: "Perfumes & fragrances" },
+  { src: "/DesignerInspiredPerfumes.jpg", alt: "Perfumes & fragrances" },
   { src: "/OudOrientalPerfumes.jpg", alt: "Oud & oriental" },
   { src: "/PerfumeGiftSets.jpg", alt: "Gift sets" },
   { src: "/BulkPerfumes.jpg", alt: "Bulk perfumes" },

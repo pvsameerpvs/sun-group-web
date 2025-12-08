@@ -27,10 +27,13 @@ const hero = {
 const gallery = [
   { src: "/FMCG.jpg", alt: "FMCG wholesale supply" },
   { src: "/BeveragesSnacks.jpg", alt: "Beverages & snacks" },
-  { src: "/CleaningHygiene.jpg", alt: "Cleaning & hygiene items" },
-  { src: "/PersonalCare.jpg", alt: "Personal care products" },
-  { src: "/PackagedFoods.jpg", alt: "Packaged foods" },
-  { src: "/SupermarketSupply.jpg", alt: "Supermarket & retail distribution" },
+  { src: "/Cleaninghygieneitems.jpg", alt: "Cleaning & hygiene items" },
+  { src: "/Personalcare.jpg", alt: "Personal care products" },
+  { src: "/Packagedfoods.jpg", alt: "Packaged foods" },
+  {
+    src: "/Supermarketretaildistribution.jpg",
+    alt: "Supermarket & retail distribution",
+  },
 ];
 
 const categories = [
@@ -65,13 +68,16 @@ const categories = [
       "Tissues & wipes",
       "Hygiene supplies",
     ],
-    img: { src: "/CleaningHygiene.jpg", alt: "Cleaning and hygiene products" },
+    img: {
+      src: "/Cleaninghygieneitems.jpg",
+      alt: "Cleaning and hygiene products",
+    },
   },
   {
     title: "Personal Care",
     desc: "High-demand personal care items aligned with everyday consumer needs and repeat purchase cycles.",
     bullets: ["Body care", "Hair care", "Oral care", "Personal hygiene"],
-    img: { src: "/PersonalCare.jpg", alt: "Personal care items" },
+    img: { src: "/Personalcare.jpg", alt: "Personal care items" },
   },
   {
     title: "Packaged Foods",
@@ -82,7 +88,7 @@ const categories = [
       "Instant foods",
       "Daily pantry SKUs",
     ],
-    img: { src: "/PackagedFoods.jpg", alt: "Packaged foods" },
+    img: { src: "/Packagedfoods.jpg", alt: "Packaged foods" },
   },
   {
     title: "Retail & Distributor Supply",
@@ -94,7 +100,7 @@ const categories = [
       "Reliable delivery",
     ],
     img: {
-      src: "/SupermarketSupply.jpg",
+      src: "/Supermarketretaildistribution.jpg",
       alt: "Retail and distribution supply",
     },
   },

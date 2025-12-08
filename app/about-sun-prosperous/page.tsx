@@ -96,7 +96,7 @@ const divisions = [
       "Small home appliances",
     ],
     note: "High-demand electronics sourced from global suppliers.",
-    img: { src: "/ElectronicsTrading.jpg", alt: "Electronics trading" },
+    img: { src: "/Mobilephonesaccessories2.jpg", alt: "Electronics trading" },
   },
   {
     title: "Auto Parts Trading (NEW DIVISION)",

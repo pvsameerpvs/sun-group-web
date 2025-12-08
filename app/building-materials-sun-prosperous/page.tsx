@@ -16,7 +16,7 @@ const theme = {
 };
 
 const hero = {
-  src: "/BuildingMaterialsHero.jpg",
+  src: "/Building materials trading.jpg",
   alt: "Building materials wholesale supply",
 };
 
@@ -119,7 +119,7 @@ const workflow = [
 ];
 
 const gallery = [
-  { src: "/buildingmaterials.jpg", alt: "Building materials trading" },
+  { src: "/Building materials trading.jpg", alt: "Building materials trading" },
   { src: "/CementSteel.jpg", alt: "Cement & steel" },
   { src: "/TilesCeramics.jpg", alt: "Tiles & ceramics" },
   { src: "/ElectricalComponents.jpg", alt: "Electrical components" },

@@ -54,7 +54,7 @@ const categories = [
       "Formal footwear",
       "Fashion footwear collections",
     ],
-    img: { src: "/venus-shoes.jpg", alt: "Shoes trading" },
+    img: { src: "/Shoestrading.jpg", alt: "Shoes trading" },
   },
   {
     title: "Perfume Trading",
