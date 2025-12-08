@@ -5,7 +5,7 @@ import { HeroLogos } from "@/components/hero-logos";
 
 export default function HomePage() {
   return (
-    <main className="relative min-h-screen text-white">
+    <main className="relative min-h-screen text-slate-900">
       {/* FULLSCREEN BACKGROUND */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -15,30 +15,28 @@ export default function HomePage() {
           className="object-cover object-center"
           priority
         />
+        {/* Light/white overlay for elegant look */}
+        <div className="absolute inset-0 bg-white/80" />
+        {/* Soft gradient so it feels premium */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/85 to-white" />
       </div>
-
-      {/* BLACK OVERLAY */}
-      <div className="absolute inset-0 -z-10 bg-black/70" />
 
       {/* PAGE LAYOUT */}
       <div className="min-h-screen flex flex-col">
-        {/* Intro (keep) */}
-        <header className="pt-8 pb-4 text-center">
+        {/* Intro */}
+        <header className="pt-10 pb-6 text-center px-6">
           <h1
             className="
               text-4xl md:text-6xl
-              font-extrabold
-              tracking-wide
-              bg-gradient-to-r from-blue-400 via-blue-300 to-orange-400
+              font-extrabold tracking-tight
+              bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900
               text-transparent bg-clip-text
-              gradient-animate
-              drop-shadow-[0_0_12px_rgba(0,0,0,0.35)]
             "
           >
             Welcome to Sun Group
           </h1>
 
-          <p className="mt-3 text-white/70 max-w-4xl mx-auto text-sm md:text-base leading-relaxed">
+          <p className="mt-4 max-w-4xl mx-auto text-sm md:text-base leading-relaxed text-slate-600">
             Sun Group is a trusted multi-sector business network operating
             across the UAE for over two decades. From trading and import–export
             to technology, retail, and corporate services, each company under
@@ -48,21 +46,19 @@ export default function HomePage() {
         </header>
 
         {/* MAIN CARD */}
-        <section className="flex-1 flex items-center justify-center pb-10">
+        <section className="flex-1 flex items-center justify-center pb-12 px-6">
           <div className="container mx-auto flex justify-center">
-            <div className="relative mx-auto max-w-6xl rounded-[2.2rem] border border-white/12 bg-black/55 p-6 md:p-8 shadow-[0_22px_70px_rgba(0,0,0,0.85)] backdrop-blur-xl">
+            <div className="relative mx-auto w-full max-w-6xl rounded-[2.2rem] border border-black/10 bg-white/75 p-6 md:p-8 shadow-[0_18px_60px_rgba(15,23,42,0.12)] backdrop-blur-xl">
+              {/* subtle top accent */}
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-black/10 to-transparent" />
+
               <div className="mb-6 text-center">
-                <h2
-                  className="
-                    text-2xl md:text-3xl font-bold
-                    bg-gradient-to-r from-blue-400 via-blue-300 to-orange-400
-                    text-transparent bg-clip-text
-                    gradient-animate
-                    drop-shadow-[0_0_10px_rgba(0,0,0,0.35)]
-                  "
-                >
+                <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">
                   Explore the Sun Group Companies
                 </h2>
+                <p className="mt-2 text-sm text-slate-600">
+                  Choose a company to open its website.
+                </p>
               </div>
 
               <HeroLogos companies={companies} />
@@ -70,8 +66,8 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Small home footer text (optional). Remove if you want only global footer. */}
-        <div className="pb-4 pt-1 text-center text-[11px] text-white/45">
+        {/* Footer text */}
+        <div className="pb-6 pt-2 text-center text-[11px] text-slate-500">
           © {new Date().getFullYear()} Sun Group · All company websites in one
           portal
         </div>
