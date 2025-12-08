@@ -28,13 +28,19 @@ export function HeroLogos({ companies }: { companies: Company[] }) {
           <div className="absolute inset-0 bg-black/50" />
 
           {/* LOGO CENTERED */}
-          <div className="relative mb-4 flex h-24 w-24 items-center justify-center ">
-            <Image
-              src={c.logo.src}
-              alt={c.logo.alt}
-              fill
-              className="object-contain p-3"
-            />
+          {/* LOGO CENTERED (badge like screenshot) */}
+          {/* LOGO CENTERED (badge) */}
+          <div className="relative mb-4 mt-2 flex items-center justify-center">
+            <div className="relative h-24 w-24 overflow-hidden rounded-[1.75rem] border border-white/35 bg-white shadow-[0_18px_45px_rgba(0,0,0,0.22)]">
+              <Image
+                src={c.logo.src}
+                alt={c.logo.alt}
+                fill
+                sizes="96px"
+                className="object-contain "
+                priority
+              />
+            </div>
           </div>
 
           {/* TEXT */}

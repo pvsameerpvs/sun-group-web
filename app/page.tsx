@@ -5,71 +5,40 @@ import { HeroLogos } from "@/components/hero-logos";
 
 export default function HomePage() {
   return (
-    <main className="relative min-h-screen text-slate-900">
-      {/* FULLSCREEN BACKGROUND */}
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/herobg.png"
-          alt="Sun Group Background"
-          fill
-          className="object-cover object-center"
-          priority
-        />
-        {/* Light/white overlay for elegant look */}
-        <div className="absolute inset-0 bg-white/80" />
-        {/* Soft gradient so it feels premium */}
-        <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/85 to-white" />
+    <main className="relative min-h-screen bg-[#fbf7ef] text-slate-900">
+      {/* soft background like screenshot */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#fbf7ef] via-white to-[#f6f7fb]" />
+        <div className="absolute inset-0 opacity-[0.10] [background:radial-gradient(circle_at_30%_20%,#f59e0b,transparent_40%),radial-gradient(circle_at_80%_30%,#60a5fa,transparent_45%),radial-gradient(circle_at_50%_85%,#94a3b8,transparent_55%)]" />
       </div>
 
-      {/* PAGE LAYOUT */}
-      <div className="min-h-screen flex flex-col">
-        {/* Intro */}
-        <header className="pt-10 pb-6 text-center px-6">
-          <h1
-            className="
-              text-4xl md:text-6xl
-              font-extrabold tracking-tight
-              bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900
-              text-transparent bg-clip-text
-            "
-          >
-            Welcome to Sun Group
-          </h1>
+      <div className="mx-auto flex min-h-screen max-w-7xl items-center px-4 py-10 sm:px-6 lg:px-8">
+        {/* big white container */}
+        <div className="w-full rounded-[2.6rem] border border-slate-200/70 bg-white shadow-[0_30px_90px_rgba(15,23,42,0.10)]">
+          <div className="p-6 sm:p-10">
+            {/* small top chip (like screenshot) */}
+            <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-semibold tracking-[0.18em] text-slate-600">
+              <span className="h-3 w-3 rounded-full bg-orange-500" />
+              <span className="uppercase">Sun Group of Companies</span>
+            </div>
 
-          <p className="mt-4 max-w-4xl mx-auto text-sm md:text-base leading-relaxed text-slate-600">
-            Sun Group is a trusted multi-sector business network operating
-            across the UAE for over two decades. From trading and import–export
-            to technology, retail, and corporate services, each company under
-            the group delivers excellence, innovation, and reliable solutions
-            worldwide.
-          </p>
-        </header>
+            {/* cards grid */}
+            <HeroLogos companies={companies} />
 
-        {/* MAIN CARD */}
-        <section className="flex-1 flex items-center justify-center pb-12 px-6">
-          <div className="container mx-auto flex justify-center">
-            <div className="relative mx-auto w-full max-w-6xl rounded-[2.2rem] border border-black/10 bg-white/75 p-6 md:p-8 shadow-[0_18px_60px_rgba(15,23,42,0.12)] backdrop-blur-xl">
-              {/* subtle top accent */}
-              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-black/10 to-transparent" />
-
-              <div className="mb-6 text-center">
-                <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">
-                  Explore the Sun Group Companies
-                </h2>
-                <p className="mt-2 text-sm text-slate-600">
-                  Choose a company to open its website.
-                </p>
+            {/* bottom line + footer text */}
+            <div className="mt-10 flex items-center gap-6">
+              <div className="h-px flex-1 bg-slate-200" />
+              <div className="text-[11px] font-semibold tracking-[0.30em] text-slate-400">
+                CURATED BY SUN GROUP
               </div>
+              <div className="h-px flex-1 bg-slate-200" />
+            </div>
 
-              <HeroLogos companies={companies} />
+            <div className="mt-6 flex flex-col gap-2 text-[12px] text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+              <div>© {new Date().getFullYear()} Sun Group of Companies.</div>
+              <div>All rights reserved.</div>
             </div>
           </div>
-        </section>
-
-        {/* Footer text */}
-        <div className="pb-6 pt-2 text-center text-[11px] text-slate-500">
-          © {new Date().getFullYear()} Sun Group · All company websites in one
-          portal
         </div>
       </div>
     </main>
