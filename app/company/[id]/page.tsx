@@ -43,7 +43,7 @@ const sliderImages: Record<string, { src: string; alt: string }[]> = {
       alt: "Building materials & industrial supply",
     },
     {
-      src: "/ReadyMadeGarmentsTextiles.jpg",
+      src: "/it.png",
       alt: "IT, electronics & auto parts trading",
     },
   ],
@@ -56,7 +56,10 @@ const sliderImages: Record<string, { src: string; alt: string }[]> = {
       src: "/Garmentsshoeslifestyleproducts.jpg",
       alt: "Garments, shoes & lifestyle products",
     },
-    { src: "/Perfumescuratedgifting.jpg", alt: "Perfumes and curated gifting" },
+    {
+      src: "/Perfumescuratedgifting1.jpg",
+      alt: "Perfumes and curated gifting",
+    },
   ],
 };
 
@@ -79,7 +82,7 @@ const sectionImage: Record<
     },
   },
   "sun-prosperous": {
-    about: { src: "/AutoPartsGeneralTrading.jpg", alt: "About Sun Prosperous" },
+    about: { src: "/FMCGTrading.png", alt: "About Sun Prosperous" },
     fmcg: { src: "/FMCG.jpg", alt: "FMCG" },
     apparel: { src: "/Garmentstextiles.jpg", alt: "Garments & textiles" },
     building: { src: "/buildingmaterials.jpg", alt: "Building materials" },

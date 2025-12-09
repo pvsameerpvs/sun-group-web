@@ -33,11 +33,6 @@ export default function HomePage() {
               </div>
               <div className="h-px flex-1 bg-slate-200" />
             </div>
-
-            <div className="mt-6 flex flex-col gap-2 text-[12px] text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-              <div>© {new Date().getFullYear()} Sun Group of Companies.</div>
-              <div>All rights reserved.</div>
-            </div>
           </div>
         </div>
       </div>

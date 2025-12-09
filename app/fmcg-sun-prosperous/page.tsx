@@ -46,7 +46,7 @@ const categories = [
       "Storage & utility",
       "Everyday consumables",
     ],
-    img: { src: "/HouseholdEssentials.jpg", alt: "Household essentials" },
+    img: { src: "/fmgc1.png", alt: "Household essentials" },
   },
   {
     title: "Beverages & Snacks",

@@ -172,7 +172,7 @@ export default function Page() {
         {/* ✅ Background FIX: no -z-10 */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/sun-prosperous.jpg"
+            src="/sun-prosperous1.jpg"
             alt="Sun Prosperous Goods Wholesalers"
             fill
             priority
