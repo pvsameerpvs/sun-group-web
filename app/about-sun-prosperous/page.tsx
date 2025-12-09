@@ -72,7 +72,7 @@ const divisions = [
       "Brake fluids & coolants",
     ],
     note: "For workshops, fleets, construction firms, and industrial applications.",
-    img: { src: "/DistalleOilProducts.jpg", alt: "Lubricants & oils" },
+    img: { src: "/DistalleOilProducts1.jpg", alt: "Lubricants & oils" },
   },
   {
     title: "IT Products Trading",

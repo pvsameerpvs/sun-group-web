@@ -1,11 +1,19 @@
 export type NavItem = { label: string; href: string; description?: string };
 
+export type CompanyContact = {
+addressLines: string[]; // multiple lines for address
+poBox?: string;
+phones?: string[]; // list of phone numbers
+email?: string;
+};
+
 export type Company = {
-  id: "sun-trading" | "sun-prosperous" | "venus-overseas";
-  name: string;
-  tagline: string;
-  established: string;
-  logo: { src: string; alt: string };
+id: "sun-trading" | "sun-prosperous" | "venus-overseas";
+name: string;
+tagline: string;
+established: string;
+logo: { src: string; alt: string };
+contact?: CompanyContact; // NEW: contact information
   theme: {
     // Used for gradients and accents. Keep them as Tailwind classes for simple theming.
     pageBg: string;
@@ -33,6 +41,18 @@ export const companies: Company[] = [
   established: "Est. 1997",
 
   logo: { src: "/logos/sun-trading.png", alt: "Sun Trading LLC logo" },
+
+  contact: {
+addressLines: [
+"AL BUDOOR BUILDING",
+"Office No. 102, 1st Floor",
+"Baniyas Square, Deira",
+"Dubai, United Arab Emirates",
+],
+poBox: "502181, Dubai – UAE",
+phones: ["0507537771"],
+email: "ishant@suntradingdubai.com",
+},
 
   theme: {
     pageBg: "bg-gradient-to-b from-[#f5f1ff] via-[#ffffff] to-[#f6f7fb]",
@@ -155,6 +175,16 @@ export const companies: Company[] = [
     "FMCG • Garments • Building Materials • Perfumes • Distalle Oil • IT Products • Electronics • Auto Parts • General Trading",
   established: "Est. 2021",
   logo: { src: "/logos/sun-prosperous.jpg", alt: "Sun Prosperous logo" },
+  contact: {
+addressLines: [
+"AL BUDOOR BUILDING",
+"Office No. 102, 1st Floor",
+"Baniyas Square, Deira",
+"Dubai, United Arab Emirates",
+],
+phones: ["+971 4 393 7367", "050 7537771"],
+email: "ishant@suntradingdubai.com",
+},
 
   theme: {
     pageBg: "bg-gradient-to-b from-[#fff3eb] via-[#ffffff] to-[#f6f7fb]",
@@ -302,6 +332,16 @@ export const companies: Company[] = [
   tagline: "Global Trading • Readymade Garments • Shoes • Perfumes • Gifts",
   established: "Est. 2024",
   logo: { src: "/logos/venus-overseas.png", alt: "Venus Overseas logo" },
+  contact: {
+addressLines: [
+"AL BUDOOR BUILDING",
+"Office No. 102, 1st Floor",
+"Baniyas Square, Deira",
+"Dubai, United Arab Emirates",
+],
+phones: ["+971 50 240 3684"],
+email: "Venusoverseasdubai@hotmail.com",
+},
 
   theme: {
     pageBg: "bg-gradient-to-b from-[#f5f1ff] via-[#ffffff] to-[#f6f7fb]",

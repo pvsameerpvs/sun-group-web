@@ -65,7 +65,7 @@ const categories = [
       "Gift sets & premium EDPs",
       "Seasonal fragrance collections",
     ],
-    img: { src: "/venus-perfumes.jpg", alt: "Perfume trading" },
+    img: { src: "/venus-perfumes.png", alt: "Perfume trading" },
   },
   {
     title: "Gifts Trading",
