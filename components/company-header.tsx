@@ -66,7 +66,7 @@ export function CompanyHeader({ company }: { company: Company }) {
 
             <div className="flex items-center gap-2">
               <nav className="hidden lg:flex items-center gap-1">
-                {company.nav.slice(0, 5).map((it) => (
+                {company.nav.slice(0, 6).map((it) => (
                   <a
                     key={it.href}
                     href={it.href}

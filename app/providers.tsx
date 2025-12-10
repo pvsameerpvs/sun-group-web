@@ -25,6 +25,7 @@ function resolveCompany(pathname: string): Company {
     { prefix: "/divisions-sun-trading", id: "sun-trading" },
     { prefix: "/import-export-sun-trading", id: "sun-trading" },
     { prefix: "/quality-sun-trading", id: "sun-trading" },
+    { prefix: "/contact-sun-trading", id: "sun-trading" },
 
     // Add others when you create them:
 
@@ -32,6 +33,7 @@ function resolveCompany(pathname: string): Company {
     { prefix: "/fmcg-sun-prosperous", id: "sun-prosperous" },
     { prefix: "/building-materials-sun-prosperous", id: "sun-prosperous" },
     { prefix: "/perfumes-sun-prosperous", id: "sun-prosperous" },
+    { prefix: "/contact-sun-prosperous", id: "sun-prosperous" },
 
     // { prefix: "/quality-venus-overseas", id: "venus-overseas" },
 
@@ -39,6 +41,7 @@ function resolveCompany(pathname: string): Company {
     { prefix: "/garments-venuse-overseas", id: "venus-overseas" },
     { prefix: "/shoes-venuse-overseas", id: "venus-overseas" },
     { prefix: "/perfumes-venuse-overseas", id: "venus-overseas" },
+    { prefix: "/contact-venuse-overseas", id: "venus-overseas" },
   ];
 
   const hit = routeMap.find((x) => pathname.startsWith(x.prefix));
